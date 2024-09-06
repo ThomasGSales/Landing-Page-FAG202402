@@ -13,7 +13,7 @@ export default function Header() {
         <>
            <header className='container py-sm'>
                 <nav className='flex items-center justify-between'>
-                    <img src={myLogo} alt="logo" width={200} height={60}/>
+                    <img src={myLogo} alt="logo" width={50} height={50}/>
                 
                     <div className='desktop-only'>
                         <ul className="flex gap-1">
