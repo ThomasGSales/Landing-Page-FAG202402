@@ -7,7 +7,7 @@ interface IButtonProps {
 
 export default function Button({ text, secondary}: IButtonProps) {
     return (
-    <button className={secondary ? "btn-secondary" : "btn-primary"}>
+    <button style={{width: "10.625rem"}} className={secondary ? "btn-secondary" : "btn-primary"}>
         {text}
     </button>
     )
