@@ -6,6 +6,11 @@
     color: var(--second-text-color);
   }
 
+  .no-scroll {
+    overflow: hidden !important;
+    height: 100vh;
+  }
+
   .ml-lg {
     margin-right: 2.875rem;
   }
