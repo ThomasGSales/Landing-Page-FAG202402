@@ -1,0 +1,235 @@
+#section2 {
+    background: var(--light-gray);
+    height: 220vh;
+    display: flex;
+    overflow: hidden;
+}
+
+#section2 p {
+    color: var(--second-text-color);
+}
+
+#section2 .content {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    text-align: center;
+    gap: 1.75rem;
+}
+
+#section2 .content > div {
+    width: fit-content;
+    align-self: center;
+    margin-bottom: 20%;
+}
+
+.card-one{
+    background-color: var(--secondary-color);
+    height: 410px;
+    width: 324px;
+    transition: 0.2s;
+    border-bottom: 6px solid var(--primary-color);
+    box-shadow: -5px 5px 6px 0.2px rgba(0, 0, 0, 0.2);
+}
+
+.card-one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+#card-one-group {
+    flex-direction: column;
+    position: relative;
+}
+
+
+@media (width >= 1280px) {
+    
+    #section2 {
+        background: var(--bg-color);
+        border-top: none;
+        height: 120vh;
+        > span {
+            position: absolute;
+            top: 0;
+        }
+        
+        > img {
+            top: 0;
+            height: 82%;
+            padding-left: 55%;
+        
+        }
+    
+        .content p {
+            width: 80%;
+            align-self: center;
+        }
+        .content {
+            gap: 2.5rem;
+        }
+
+        .card-one:hover {
+            transform: scale(1.09, 1.09);
+        }
+
+        .content p {
+            width: 80%;
+            align-self: center;
+        }
+        
+        .content p:first-of-type {
+            color: var(--primary-color);
+            font-weight: var(--fw-bold);
+        }
+    
+    }
+
+    #card-one-group {
+        flex-direction: row;
+    }
+    
+}
+.cards-section {
+    padding: var(--py-lg) 0;
+}
+
+.container.grid.center {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: stretch;
+    text-align: center;
+}
+
+.card {
+    background-color: var(--light-gray);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-size: var(--fs-lg);
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.card p {
+    font-size: var(--fs-base);
+    color: var(--second-text-color);
+}
+
+@media (max-width: 300px) {
+    .container.grid.center {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .card {
+        padding: 1rem;
+    }
+
+    .card h3 {
+        font-size: var(--fs-base);
+    }
+
+    .card p {
+        font-size: var(--fs-sm);
+    }
+}
+
+.pricing-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 50vh;
+}
+
+.pricing-card {
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.2s;
+    border: 2px solid var(--primary-color);
+}
+
+.pricing-card:hover {
+    transform: scale(1.09, 1.09);
+    
+    transition: 0.2s;
+}
+
+.pricing-card h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin: 1rem 0;
+}
+
+.pricing-card ul {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}   
+
+.pricing-card ul li {
+    flex-grow: 1;
+}
+
+.premium-card {
+    animation: bordaDourada 3s infinite;
+}
+
+@keyframes bordaDourada {
+    0% {
+        border: 2px solid gold;
+    } 50% {
+        border: 2px solid goldenrod;
+    } 100% {
+        border: 2px solid gold;
+    }
+}
+
+.premium-card h2 {
+    font-size: 2rem;
+    animation: premiumAnimate 3s infinite;
+}
+
+.premium-card h3 {
+    animation: premiumAnimate 3s infinite;
+}
+
+@keyframes premiumAnimate {
+    0% {
+        color: gold;
+    } 50% {
+        color: goldenrod;
+    } 100% {
+        color: gold;
+    }
+}
+
+.card-separator {
+    margin: 1rem;
+    border: none;
+    border-top: 1px solid transparent;
+    width: 100%;
+    margin-inline: auto;
+}
