@@ -44,6 +44,10 @@
     gap: 1.5rem;
 }
 
+.gap-2 {
+    gap: 2.3rem;
+}
+
 .btn-wrapper {
     cursor: pointer;
     padding: 2px;
@@ -55,6 +59,8 @@
     margin-inline: auto;
 }
 
+
+
 @media (width >= 1280px) {
     .container {
         --max-width: 1050px;
@@ -62,11 +68,16 @@
 
     .desktop-only {
         display: initial;
+        
     }
 
     .even-columns {
         grid-auto-flow: column;
         grid-auto-columns: 1fr;
+    }
+
+    nav{
+        padding: 1rem 2rem;
     }
 
     nav > img {
@@ -77,5 +88,4 @@
         display: none;
     }
 }
-
 
