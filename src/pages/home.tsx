@@ -2,13 +2,14 @@
 import HeroRectangleOne from "../assets/images/rectangleOne.png";
 import HeroRectangleTwo from "../assets/images/rectangleTwo.png";
 import Button from "../components/Button"
+import Contact from "../components/Contact"
 import ButtonPremium from "../components/Button premium.tsx";
 import "../styles/hero.css";
 import '../styles/utility.css';
-import "../styles/buttons.css";
 import "../styles/section2.css";
 import '../styles/footer.css';
 import '../styles/carrosel.css';
+import "../styles/buttons.css";
 import ProfileImageOne from "../assets/images/myPhoto.png"
 import logoCard from "../assets/logo-card.svg"
 import Footer from '../components/Footer.tsx';
@@ -229,7 +230,7 @@ export default function Home() {
                 </section>
             </section>
 
-            <section id='hero' style={{height: "50vh"}}>
+            <section id='hero' style={{height: "20vh", backgroundColor: "var(--bg-color)"}}>
                 <div className="container content">
                     <p className="desktop-only">
                         Preços e planos
@@ -240,7 +241,7 @@ export default function Home() {
                 </div>
             </section>
             <section id="pricing" className="pricing-section py-lg">
-                <div className="container grid center" >
+                <div className="container flex center" >
                     <div className="card pricing-card" style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
                         <h3>Básico</h3>
                         <p>Baixe o ferramenta e comece a utilizar agora mesmo!</p>
@@ -279,6 +280,9 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+
+
+            <Contact />
             <Footer />
             
             
